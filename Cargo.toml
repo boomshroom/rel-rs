@@ -1,0 +1,23 @@
+[package]
+name = "rel"
+version = "0.1.0"
+authors = ["Angelo Bulfone <mbulfone@gmail.com>"]
+description = "A versatile and safe relative pointer capable of acting like many standard pointers."
+license = "MIT"
+repository = "https://github.com/boomshroom/rel-rs"
+readme = "README.md"
+keywords = ["pointer", "no_std", "memory", "smart"]
+categories = ["data-structures", "memory-management", "no-std"]
+edition = "2018"
+
+[badges]
+maintenance = { status = "experimental" }
+
+[dependencies]
+num-traits = "0.2.6"
+
+[features]
+default = ["std"]
+nightly = []
+alloc = ["nightly"]
+std = []
